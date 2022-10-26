@@ -18,7 +18,7 @@ const Body = () => {
     function handleOrder(element){
         let newCart = [...cart, element];
         setCart(newCart);
-        addToDb();
+        addToDb(element.idMeal);
     }
     
     return (

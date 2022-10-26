@@ -2,7 +2,7 @@
 
 function addToDb(id){
     let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
-    console.log(mealCart);
+    console.log(id);
 }
 
 
