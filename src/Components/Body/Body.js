@@ -12,11 +12,11 @@ const Body = () => {
     return (
         <div className="mainDiv">
             <div className="left-div">
-                <h2>Total Food Found : {foods.length} </h2>
                 <div className="search-div">
-                    <input type="text" name="" id=""/>
+                    <input type="text" name="" id="" placeholder="Search Food Here...." />
                     <button>Search Food</button>
                 </div>
+                <h2>Total Food Found : {foods.length} </h2>
             </div>
             <div className="right-div">
                 <h2>Ok</h2>
