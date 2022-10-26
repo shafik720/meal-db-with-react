@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Foods from '../Foods/Foods';
+import Cart from '../Header/Cart/Cart';
 import Meal from '../Meal/Meal';
 
 import './Body.css'
@@ -13,9 +13,10 @@ const Body = () => {
         .then(data=>setMeal(data.meals));
     },[]);
 
-    
+    const [cart, setCart] = useState([]);
     function handleOrder(element){
-        console.log(element);
+        let newCart = [...cart, element];
+        setCart(newCart);
     }
     
     return (
@@ -30,7 +31,7 @@ const Body = () => {
                  }
             </div>
             <div className="right-div">
-                <h2>Ok</h2>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
