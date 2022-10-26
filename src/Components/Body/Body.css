@@ -4,39 +4,14 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     margin-top: 70px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .left-div{
     padding: 0 30px;
 }
 
-.search-div{
-    margin-top: 40px;
-}
-.search-div input{
-    height: 50px;
-    width: 60%;
-    margin: 20px 20px;
-    outline: none;
-    border: 2px solid darkblue;
-    border-radius: 5px;
-    font-size: 18px;
-    text-align: center;
-    border-bottom: 2px solid grey;
-}
-.search-div button{
-    height: 50px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    background-color: darkblue;
-    cursor: pointer;
-}
+
 
 
 .left-div{
