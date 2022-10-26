@@ -4,6 +4,7 @@
 }
 
 .cart{
-    position: sticky;
+    /* position: sticky;
     top: 10%;
+    overflow-y: scroll; */
 }
