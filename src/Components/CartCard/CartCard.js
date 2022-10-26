@@ -2,10 +2,12 @@ import React from 'react';
 import './CartCard.css';
 
 const CartCard = (props) => {
-    console.log(props);
+    console.log(props.index);
+    const{strMeal, quantity, strMealThumb} = props.index;
     return (
-        <div>
-            <h2>Hello From Cart Card</h2>
+        <div className="cardx">
+           <div className="card-left"></div>
+           <div className="card-right"></div>
         </div>
     );
 };
