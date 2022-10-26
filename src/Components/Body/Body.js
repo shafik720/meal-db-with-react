@@ -9,12 +9,19 @@ const Body = () => {
         .then(data=>setFoods(data.meals))
     },[])
 
+    // getting value
+    let button = document.getElementById('btn');
+    let searchField = document.getElementById('searchField');
+    
+    function searchFood(){
+        
+    }
     return (
         <div className="mainDiv">
             <div className="left-div">
                 <div className="search-div">
-                    <input type="text" name="" id="" placeholder="Search Food Here...." />
-                    <button>Search Food</button>
+                    <input type="text" name="" id="searchField" placeholder="Search Food Here...." />
+                    <button onClick={searchFood} id="button">Search Food</button>
                 </div>
                 <h2>Total Food Found : {foods.length} </h2>
             </div>
