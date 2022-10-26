@@ -15,7 +15,7 @@ const Body = () => {
     },[]);
 
     
-
+    // setting value to local storage
     const [cart, setCart] = useState([]);
     function handleOrder(element){
         let newCart = [...cart, element];
