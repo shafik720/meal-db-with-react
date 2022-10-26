@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Header/Cart/Cart';
 import Meal from '../Meal/Meal';
-import { addToDb, getMealCart } from '../Utilities/storage';
+import { addToDb, decreaseDb, getMealCart } from '../Utilities/storage';
 
 import './Body.css'
 
@@ -23,6 +23,15 @@ const Body = () => {
         addToDb(element.idMeal);
     }
 
+    // decreasing value 
+    let [decrease, setDecrease] = useState([]);
+    function decreaseValue(element){
+        // console.log(element)
+        let newCart = [...decrease,element];
+        decreaseDb(element.idMeal);
+        setDecrease(newCart);
+    }
+
     // getting value & showing value from local storage 
     const [foods, setFoods] = useState([]);
     useEffect(()=>{
@@ -37,7 +46,8 @@ const Body = () => {
             }            
         }
         setFoods(freshCart);
-    },[meal, cart]);
+    },[meal, cart, decrease]);
+    
     
     return (
         <div className="mainDiv">
@@ -54,6 +64,7 @@ const Body = () => {
                 <Cart 
                 cart={cart}
                 foods = {foods}
+                decreaseValue = {decreaseValue}
                 ></Cart>
             </div>
         </div>

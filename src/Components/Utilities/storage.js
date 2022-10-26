@@ -1,8 +1,7 @@
 
 
 function addToDb(id){
-    let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
-    
+    let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');    
     if(id in mealCart){
         mealCart[id] = mealCart[id] + 1;
     }else{
@@ -17,12 +16,17 @@ function getMealCart(){
 }
 
 
-
+function decreaseDb(x){
+    let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
+    mealCart[x] = mealCart[x] - 1;
+    localStorage.setItem('meal-cart', JSON.stringify(mealCart));
+}
 
 
 
 
 export{
     addToDb,
-    getMealCart
+    getMealCart,
+    decreaseDb
 }
