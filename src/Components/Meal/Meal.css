@@ -9,15 +9,20 @@
 }
 .meal-card img{
     width: 100%;
+    border-radius: 5px;
 }
 
 .meal-body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ghostwhite;
-    margin: 10px 0;
+    background-color:lightsteelblue;
+    margin-top: 10px;
     padding: 0 15px;
     border-radius: 5px;
-    color: darkslateblue
+    color: black
+}
+
+.meal-body p{
+    font-weight: 600;
 }
