@@ -1,5 +1,7 @@
 import React from 'react';
 import './CartCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faDeleteLeft, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
 const CartCard = (props) => {
     console.log(props.index);
@@ -16,7 +18,8 @@ const CartCard = (props) => {
                </div>
            </div>
            <div className="card-right">
-               <p>Ok</p>
+               <span><FontAwesomeIcon icon={faMinus} /></span>
+               <span><FontAwesomeIcon icon={faPlus} /></span>
            </div>
         </div>
     );
