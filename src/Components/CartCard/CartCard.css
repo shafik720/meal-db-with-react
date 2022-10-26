@@ -33,3 +33,9 @@
     color: darkblue;
     font-weight: 700;
 }
+
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+}
