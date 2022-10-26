@@ -13,6 +13,7 @@ const Meal = (props) => {
                 <div className="meal-body">
                     <div className="">
                         <h3>{strMeal}</h3>
+                        <button>Order</button>
                     </div>
                     <div className="">
                         <p>{strArea}</p>

@@ -26,3 +26,16 @@
 .meal-body p{
     font-weight: 600;
 }
+.meal-body h3{
+    margin: 0;
+}
+.meal-body button{
+    display: block;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
