@@ -14,7 +14,7 @@ const Body = () => {
     },[]);
 
     function handleOrder(element){
-        console.log('ok');
+        console.log(element);
     }
     
     return (
