@@ -4,11 +4,11 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     margin-top: 70px;
+    gap: 20px;
 }
 
 .left-div{
-    text-align: center;
-    /* margin: 40px 0; */
+    padding: 0 30px;
 }
 
 .search-div{

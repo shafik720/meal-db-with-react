@@ -8,7 +8,7 @@ const Meal = (props) => {
         <div>
             <div className="meal-card">
                 <div className="meal-top">
-                    <img src={strMealThumb} alt=""/>
+                    <img src={strMealThumb} alt=""  />
                 </div>
             </div>
         </div>
