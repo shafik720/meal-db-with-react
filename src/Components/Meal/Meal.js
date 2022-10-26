@@ -2,7 +2,6 @@ import React from 'react';
 import './Meal.css'
 
 const Meal = (props) => {
-    // console.log(props);
     const{strMealThumb, strMeal, strArea, strCategory} = props.index
     return (
         <div>

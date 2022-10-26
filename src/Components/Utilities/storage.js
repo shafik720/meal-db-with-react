@@ -9,7 +9,11 @@ function addToDb(id){
         mealCart[id] = 1;
     }
     localStorage.setItem('meal-cart', JSON.stringify(mealCart));
+}
 
+function getMealCart(){
+    let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
+    return mealCart;
 }
 
 
@@ -18,9 +22,7 @@ function addToDb(id){
 
 
 
-
-
-
 export{
-    addToDb
+    addToDb,
+    getMealCart
 }
