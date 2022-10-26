@@ -5,6 +5,7 @@ function addToDb(id){
     mealCart[id] = 1;
     localStorage.setItem('meal-cart', JSON.stringify(mealCart));
     console.log(mealCart);
+    
 }
 
 
