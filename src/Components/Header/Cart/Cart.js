@@ -2,7 +2,8 @@ import React from 'react' ;
 import './Cart.css' ;
 
 const Cart = (props) => {
-    console.log(props.foods);
+    let box = props.foods;
+    console.log(box);
     let quantity = 0;
     for(let element of props.foods){
         quantity += element.quantity;
