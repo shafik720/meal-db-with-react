@@ -18,8 +18,8 @@ const CartCard = (props) => {
                </div>
            </div>
            <div className="card-right">
-               <span><FontAwesomeIcon icon={faMinus} /></span>
                <span><FontAwesomeIcon icon={faPlus} /></span>
+               <span><FontAwesomeIcon icon={faMinus} /></span>
            </div>
         </div>
     );
