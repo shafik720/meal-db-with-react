@@ -2,3 +2,8 @@
 .food-counted{
     margin-top: -10px;
 }
+
+.cart{
+    position: sticky;
+    top: 10%;
+}

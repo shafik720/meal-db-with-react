@@ -5,17 +5,16 @@
     grid-template-columns: 4fr 1fr;
     margin-top: 70px;
     gap: 10px;
+    position: relative;
 }
 
 .left-div{
     padding: 0 30px;
 }
 
-
-
-
 .left-div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+

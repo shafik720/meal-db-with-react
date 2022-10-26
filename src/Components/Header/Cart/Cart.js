@@ -9,7 +9,7 @@ const Cart = (props) => {
         quantity += element.quantity;
     }
     return (
-        <div>
+        <div className='cart'>
             <h2 className="food-counted">Total Food added : {quantity} </h2>
             <div className="cart-card">
                 {
