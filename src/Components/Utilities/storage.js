@@ -20,7 +20,13 @@ function decreaseDb(x){
     let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
     if(mealCart[x]>0){
         mealCart[x] = mealCart[x] - 1;
-    }    
+    } 
+    if(mealCart[x] === 0){
+        console.log('now it should be deleted');
+        let prop = x;
+        delete mealCart[prop];
+    }
+    console.log(mealCart);
     localStorage.setItem('meal-cart', JSON.stringify(mealCart));
 }
 
