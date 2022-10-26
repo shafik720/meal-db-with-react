@@ -3,8 +3,25 @@
 
 .cardx{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid teal;
+    border-radius: 5px ;
+    padding: 5px;
+    margin: 20px 10px 20px 0;
 }
 .cardx img{
     width: 60px;
     height: 60px;
 }
+
+.card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:  -5px;
+}
+.card-left p{
+    margin: 5px 0 5px 5px;
+}
+
