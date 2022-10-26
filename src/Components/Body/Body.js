@@ -25,7 +25,7 @@ const Body = () => {
                 freshCart.push(addedMeal);
             }            
         }
-        
+        console.log(freshCart);
     },[meal])
 
     const [cart, setCart] = useState([]);
