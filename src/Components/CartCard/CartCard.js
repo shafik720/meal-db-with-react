@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faDeleteLeft, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
 const CartCard = (props) => {
-    console.log(props.index);
     const{strMeal, quantity, strMealThumb} = props.index;
     return (
         <div className="cardx">
