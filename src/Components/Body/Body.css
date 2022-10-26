@@ -4,3 +4,16 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+
+.left-div{
+    text-align: center;
+}
+
+.search-div input{
+    height: 50px;
+    width: 60%;
+    margin: 20px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
