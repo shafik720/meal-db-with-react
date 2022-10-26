@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Header/Cart/Cart';
 import Meal from '../Meal/Meal';
-import { addToDb } from '../Utilities/storage';
+import { addToDb, getMealCart } from '../Utilities/storage';
 
 import './Body.css'
 
@@ -13,6 +13,11 @@ const Body = () => {
         .then(res=>res.json())
         .then(data=>setMeal(data.meals));
     },[]);
+
+    useEffect(()=>{
+        let storedCart = getMealCart();
+        console.log(storedCart);
+    },[])
 
     const [cart, setCart] = useState([]);
     function handleOrder(element){
