@@ -2,7 +2,11 @@
 
 
 
-
+.meal-card{
+    border: 5px solid darkcyan;
+    padding: 5px ;
+    border-radius: 5px;
+}
 .meal-card img{
     width: 100%;
 }
