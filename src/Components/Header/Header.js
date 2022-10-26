@@ -4,8 +4,11 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div>
-            
+        <div className="header-div">
+            <div className="left-div">
+                
+            </div>
+            <div className="right-div"></div>
         </div>
     );    
 };
