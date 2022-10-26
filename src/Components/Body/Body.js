@@ -12,6 +12,10 @@ const Body = () => {
     return (
         <div>
             <h2>Total Food Found : {foods.length} </h2>
+            <div className="search-div">
+                <input type="text" name="" id=""/>
+                <button>Search Food</button>
+            </div>
         </div>
     );
 };
