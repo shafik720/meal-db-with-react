@@ -23,6 +23,7 @@ const Body = () => {
         addToDb(element.idMeal);
     }
 
+    // getting value & showing value from local storage 
     const [foods, setFoods] = useState([]);
     useEffect(()=>{
         let storedCart = getMealCart();
