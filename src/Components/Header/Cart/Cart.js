@@ -15,6 +15,7 @@ const Cart = (props) => {
                 {
                     box.map(index=><CartCard
                         index = {index}
+                        key = {index.idMeal}
                     ></CartCard>)
                 }
             </div>
