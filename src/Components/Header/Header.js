@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="header-div">
             <div className="left-div">
-                <h1><span><FontAwesomeIcon icon={faUtensilSpoon} /></span> Food Bangla</h1>
+                <h1><span><FontAwesomeIcon icon={faUtensils} /></span> Food Bangla</h1>
             </div>
             <div className="right-div">
                 <a href="">Home</a>
