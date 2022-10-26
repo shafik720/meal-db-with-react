@@ -3,6 +3,7 @@
 .mainDiv{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin-top: 70px;
 }
 
 .left-div{
@@ -35,4 +36,11 @@
     color: white;
     background-color: darkblue;
     cursor: pointer;
+}
+
+
+.left-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
