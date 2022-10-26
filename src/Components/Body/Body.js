@@ -16,9 +16,13 @@ const Body = () => {
 
     useEffect(()=>{
         let storedCart = getMealCart();
+        let freshCart = [];
         for(let id in storedCart){
             let addedMeal = meal.find(meals=> meals.idMeal === id);
-            console.log(addedMeal);
+            if(addedMeal){
+                let quantity = storedCart[id];
+                addedMeal.quantity = quantity;
+            }            
         }
         
     },[meal])
