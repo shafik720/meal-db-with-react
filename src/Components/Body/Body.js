@@ -14,6 +14,16 @@ const Body = () => {
         .then(data=>setMeal(data.meals));
     },[]);
 
+    
+
+    const [cart, setCart] = useState([]);
+    function handleOrder(element){
+        let newCart = [...cart, element];
+        setCart(newCart);
+        addToDb(element.idMeal);
+    }
+
+    
     useEffect(()=>{
         let storedCart = getMealCart();
         let freshCart = [];
@@ -26,14 +36,7 @@ const Body = () => {
             }            
         }
         console.log(freshCart);
-    },[meal])
-
-    const [cart, setCart] = useState([]);
-    function handleOrder(element){
-        let newCart = [...cart, element];
-        setCart(newCart);
-        addToDb(element.idMeal);
-    }
+    },[meal, cart])
     
     return (
         <div className="mainDiv">
