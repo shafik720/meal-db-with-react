@@ -15,7 +15,9 @@ const CartCard = (props) => {
                    <p>Quantity : {quantity}</p>
                </div>
            </div>
-           <div className="card-right"></div>
+           <div className="card-right">
+               <p>Ok</p>
+           </div>
         </div>
     );
 };
