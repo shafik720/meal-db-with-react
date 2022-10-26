@@ -6,7 +6,12 @@ const CartCard = (props) => {
     const{strMeal, quantity, strMealThumb} = props.index;
     return (
         <div className="cardx">
-           <div className="card-left"></div>
+           <div className="card-left">
+               <div className="left-img">
+                   <img src={strMealThumb} alt=""/>
+               </div>
+               <div className="left-details"></div>
+           </div>
            <div className="card-right"></div>
         </div>
     );
