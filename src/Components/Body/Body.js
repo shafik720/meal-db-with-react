@@ -3,7 +3,7 @@ import Cart from '../Header/Cart/Cart';
 import Meal from '../Meal/Meal';
 import { addToDb, decreaseDb, getMealCart } from '../Utilities/storage';
 
-import './Body.css'
+import './Body.css';
 
 const Body = () => {  
     
