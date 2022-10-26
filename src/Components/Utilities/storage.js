@@ -18,7 +18,9 @@ function getMealCart(){
 
 function decreaseDb(x){
     let mealCart = JSON.parse(localStorage.getItem('meal-cart') || '{}');
-    mealCart[x] = mealCart[x] - 1;
+    if(mealCart[x]>0){
+        mealCart[x] = mealCart[x] - 1;
+    }    
     localStorage.setItem('meal-cart', JSON.stringify(mealCart));
 }
 
