@@ -10,6 +10,9 @@ const Meal = (props) => {
                 <div className="meal-top">
                     <img src={strMealThumb} alt=""  />
                 </div>
+                <div className="meal-body">
+                    <h3>{strMeal}</h3>
+                </div>
             </div>
         </div>
     );
