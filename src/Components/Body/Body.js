@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Header/Cart/Cart';
 import Meal from '../Meal/Meal';
+import { addToDb } from '../Utilities/storage';
 
 import './Body.css'
 
@@ -17,6 +18,7 @@ const Body = () => {
     function handleOrder(element){
         let newCart = [...cart, element];
         setCart(newCart);
+        addToDb();
     }
     
     return (
