@@ -2,7 +2,7 @@ import React from 'react';
 import './Meal.css'
 
 const Meal = (props) => {
-    console.log(props);
+    // console.log(props);
     const{strMealThumb, strMeal, strArea, strCategory} = props.index
     return (
         <div>
@@ -13,7 +13,7 @@ const Meal = (props) => {
                 <div className="meal-body">
                     <div className="">
                         <h3>{strMeal}</h3>
-                        <button onClick={props.handleOrder}>Order</button>
+                        <button onClick={()=>props.handleOrder(props.index)}>Order</button>
                     </div>
                     <div className="">
                         <p>{strArea}</p>
