@@ -22,6 +22,7 @@ const Body = () => {
             if(addedMeal){
                 let quantity = storedCart[id];
                 addedMeal.quantity = quantity;
+                freshCart.push(addedMeal);
             }            
         }
         
