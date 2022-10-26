@@ -13,6 +13,7 @@ const Body = () => {
         .then(data=>setMeal(data.meals));
     },[]);
 
+    
     function handleOrder(element){
         console.log(element);
     }
