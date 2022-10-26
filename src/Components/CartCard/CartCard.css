@@ -44,4 +44,7 @@
 .card-right span{
     margin: 7px 9px 7px 0;
     cursor: pointer;
+    font-weight: 700; 
+    font-size: 16px;   
 }
+
