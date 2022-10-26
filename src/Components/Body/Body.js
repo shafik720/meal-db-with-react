@@ -16,8 +16,12 @@ const Body = () => {
 
     useEffect(()=>{
         let storedCart = getMealCart();
-        console.log(storedCart);
-    },[])
+        for(let id in storedCart){
+            let addedMeal = meal.find(meals=> meals.idMeal === id);
+            console.log(addedMeal);
+        }
+        
+    },[meal])
 
     const [cart, setCart] = useState([]);
     function handleOrder(element){
