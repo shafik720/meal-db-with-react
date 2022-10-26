@@ -10,11 +10,16 @@ const Body = () => {
     },[])
 
     return (
-        <div>
-            <h2>Total Food Found : {foods.length} </h2>
-            <div className="search-div">
-                <input type="text" name="" id=""/>
-                <button>Search Food</button>
+        <div className="mainDiv">
+            <div className="left-div">
+                <h2>Total Food Found : {foods.length} </h2>
+                <div className="search-div">
+                    <input type="text" name="" id=""/>
+                    <button>Search Food</button>
+                </div>
+            </div>
+            <div className="right-div">
+                <h2>Ok</h2>
             </div>
         </div>
     );
