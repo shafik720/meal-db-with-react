@@ -38,4 +38,10 @@
 .card-right{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.card-right span{
+    margin: 7px 9px 7px 0;
+    cursor: pointer;
 }
