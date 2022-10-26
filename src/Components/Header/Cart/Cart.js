@@ -10,6 +10,7 @@ const Cart = (props) => {
     return (
         <div>
             <h2>Total Food added : {quantity} </h2>
+            <div className="cart-card"></div>
         </div>
     );
 };
