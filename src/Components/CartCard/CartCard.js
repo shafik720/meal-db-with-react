@@ -12,7 +12,7 @@ const CartCard = (props) => {
                </div>
                <div className="left-details">
                    <p className="meal-name">{strMeal}</p>
-                   <p>Quantity : {quantity}</p>
+                   <p>Quantity : <span className="quantity">{quantity}</span> </p>
                </div>
            </div>
            <div className="card-right">
