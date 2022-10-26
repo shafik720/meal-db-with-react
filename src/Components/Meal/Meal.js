@@ -11,7 +11,13 @@ const Meal = (props) => {
                     <img src={strMealThumb} alt=""  />
                 </div>
                 <div className="meal-body">
-                    <h3>{strMeal}</h3>
+                    <div className="">
+                        <h3>{strMeal}</h3>
+                    </div>
+                    <div className="">
+                        <p>{strArea}</p>
+                        <p>{strCategory}</p>
+                    </div>
                 </div>
             </div>
         </div>
