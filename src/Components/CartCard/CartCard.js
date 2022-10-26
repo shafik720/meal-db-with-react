@@ -18,7 +18,7 @@ const CartCard = (props) => {
                </div>
            </div>
            <div className="card-right">
-               <span draggable><FontAwesomeIcon icon={faPlus} /></span>
+               <span draggable onClick={()=>props.handleOrder(props.index)}><FontAwesomeIcon icon={faPlus} /></span>
                <span draggable onClick={()=>props.decrease(props.index)}><FontAwesomeIcon icon={faMinus} /></span>
            </div>
         </div>

@@ -23,6 +23,9 @@ const Body = () => {
         addToDb(element.idMeal);
     }
 
+    // increasing value
+
+
     // decreasing value 
     let [decrease, setDecrease] = useState([]);
     function decreaseValue(element){
@@ -65,6 +68,7 @@ const Body = () => {
                 cart={cart}
                 foods = {foods}
                 decreaseValue = {decreaseValue}
+                handleOrder = {handleOrder} // for decreasing value if Plus sign is clicked in cart component
                 ></Cart>
             </div>
         </div>

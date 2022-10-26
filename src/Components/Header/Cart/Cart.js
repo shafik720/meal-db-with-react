@@ -4,6 +4,7 @@ import './Cart.css' ;
 
 const Cart = (props) => {
     let decrease = props.decreaseValue;
+    let handleOrder = props.handleOrder;
     let box = props.foods;
     let quantity = 0;
     for(let element of props.foods){
@@ -18,6 +19,7 @@ const Cart = (props) => {
                         index = {index}
                         key = {index.idMeal}
                         decrease = {decrease}
+                        handleOrder = {handleOrder}
                     ></CartCard>)
                 }
             </div>
