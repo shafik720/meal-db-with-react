@@ -11,7 +11,11 @@ const Body = () => {
         fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=a')
         .then(res=>res.json())
         .then(data=>setMeal(data.meals));
-    },[])
+    },[]);
+
+    function handleOrder(element){
+        console.log('ok');
+    }
     
     return (
         <div className="mainDiv">
@@ -20,6 +24,7 @@ const Body = () => {
                      meal.map(index=><Meal 
                         index={index}
                         key = {index.idMeal}
+                        handleOrder = {handleOrder}
                         ></Meal>)
                  }
             </div>
