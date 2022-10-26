@@ -23,7 +23,7 @@ const Body = () => {
         addToDb(element.idMeal);
     }
 
-    
+    const [foods, setFoods] = useState([]);
     useEffect(()=>{
         let storedCart = getMealCart();
         let freshCart = [];
@@ -35,8 +35,8 @@ const Body = () => {
                 freshCart.push(addedMeal);
             }            
         }
-        console.log(freshCart);
-    },[meal, cart])
+        setFoods(freshCart);
+    },[meal, cart]);
     
     return (
         <div className="mainDiv">
@@ -50,7 +50,10 @@ const Body = () => {
                  }
             </div>
             <div className="right-div">
-                <Cart cart={cart}></Cart>
+                <Cart 
+                cart={cart}
+                foods = {foods}
+                ></Cart>
             </div>
         </div>
     );
